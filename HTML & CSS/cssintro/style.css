@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#green{
+    background-color: brown;
+}
+.red{
+    color: blue;
+    background-color: aqua;
+    font-style: italic;
+}
+div > p{
+    background-color: blue;
+    color: white;
+}
+p{
+    background-color: pink;
+
+}
+a:visited{
+    background-color: violet;
+}
+a:link{
+    background-color: green;
+    color: blue;
+}
+a:hover{
+    background-color: black;
+}
+a:active{
+    background-color: purple;
+}
+
+
+
+

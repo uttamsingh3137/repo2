@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        .head {
+            background-color: beige;
+            margin: -18px; 
+            padding: 0px;
+        }
+
+        :root {
+            --defpad: 10px;
+            --defmar: 10px;
+            --1color: rgb(238, 255, 0);
+            --acolor: rgb(186, 201, 183);
+            --itempad: 25px;
+            --itemmar: 25px;
+
+        }
+
+        .items {
+            display: flex;
+            border-radius: 15px;
+
+        }
+
+        .items :first-child {
+
+            list-style: none;
+            padding: var(--defpad);
+            margin: var(--defmar);
+            
+            background-color: rgb(234, 234, 48);
+            &:hover{
+                background-color: rgb(224, 224, 121);
+                cursor: pointer;
+            }
+        }
+
+        .items li {
+
+            list-style: none;
+            padding: var(--defpad);
+            margin: var(--defmar);
+            background-color: var(--acolor);
+        }
+
+        .prod {
+            background-color: rgb(220, 167, 92);
+            padding: var(--itempad);
+            margin: var(--itemmar);
+            height: 240px;
+            width: 330px;
+            display: inline-flex;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        ul li{
+            border-radius: 12px;
+        }
+
+
+        .all{
+            text-align: center;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="head">
+        <ul class="items">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Order</li>
+            <li>Cart</li>
+        </ul>
+    </nav>
+    <div class="all">
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+        <div class="prod">Item x</div>
+    </div>
+</body>
+
+</html>

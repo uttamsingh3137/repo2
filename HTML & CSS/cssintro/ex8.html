@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 90vh;
+            position: relative;
+            background-color: blue;
+        }
+        .box{
+            background-color: yellow;
+            height: 105px;
+            width: 105px;
+            border-radius: 90px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+           
+            animation: animation 6s ease-out 0s infinite  ;
+            
+            
+        }
+        @keyframes animation {
+            0%{
+                transform: translateX(0%) translateY(0%);
+            }
+            12.5%{
+                transform:  translateX(300%) translateY(-300%);
+            }
+            25%{
+                transform:  translateX(600%) translateY(0%);
+            }
+            37.5%{
+                transform:  translateX(900%) translateY(-300%);
+            }
+            50%{
+                transform:  translateX(1200%) translateY(0%);
+            }
+            62.5%{
+                transform: translateX(900%) translateY(-300%);
+            }
+            75%{
+                transform:  translateX(600%) translateY(0%);
+            }
+            87.5%{
+                transform:  translateX(300%) translateY(-300%);
+            }
+            100%{
+                transform:  translateX(0%) translateY(0%);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

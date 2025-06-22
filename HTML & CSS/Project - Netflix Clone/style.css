@@ -1,0 +1,23 @@
+body {
+    background-image: url("back.jpg");
+    background-color: black
+}
+
+
+.logo {
+    height: 10px;
+    fill: rgb(229, 9, 20);
+    position: relative;
+    left: 100px;    
+}
+.right{
+    position: relative;
+    left: 800px; 
+}
+
+.sign {
+    cursor: pointer;
+    background-color: rgb(229, 9, 20);
+    position: relative;
+    margin: 10px;
+}

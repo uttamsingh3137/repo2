@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post" method="post">
+        <h1>UPSC ka form</h1>
+        <div>  
+            <label for="Username">Username : </label>
+            <input type="text" id="Username" name="Username" pattern="[a-zA-Z]+" placeholder="Enter your Username" autofocus>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="gender">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="check" id="check" value="yes" required>
+            <label for="check">Click to check</label>
+        </div>
+        <div>
+            <label for="comment">Enter comment : </label>
+            <br>
+            <textarea name="comment" id="comment" rows="5" cols="100" placeholder="Type here">Enter your comments....</textarea>
+        </div>
+        <div>
+            <label for="fruit">Select fruit</label>
+            <select name="fruit" id="fruit">
+                <option value="apple">Apple</option>
+                <option value="mango">mango</option>
+                <option value="papaya">papaya</option>
+            </select>
+            
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let r = Math.random()
+
+        let x, y, z;
+        if (r < 0.3) {
+            x = "Crazy"
+        }
+        else if (r >= 0.33 && r < 0.66) {
+            x = "Amazing"
+        }
+        else {
+            x = "Fire"
+        }
+
+        //.........................
+        if (r < 0.3) {
+            y = "Engine"
+        }
+        else if (r >= 0.33 && r < 0.66) {
+            y = "Food"
+        }
+        else {
+            y = "Garment"
+        }
+        //..........................
+        if (r < 0.3) {
+            z = "Bros"
+        }
+        else if (r >= 0.33 && r < 0.66) {
+            z = "Limited"
+        }
+        else {
+            z = "Hub"
+        }
+        //..........................
+        // alert(`${eval(`${x} ${y} ${z}`)}`)
+        console.log(`${x}${y}${z}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(" This is the line 1")
+        // console.log(" This is the line 2")
+
+        // setTimeout(() => {
+        //     console.log("I am inside timeout I am Line 3 ")
+
+        // }, 2000);
+        // console.log(" This is the line 4 the last one")
+
+        const callback = (arg) => {
+            console.log(arg)
+        }
+        
+
+        const loadscript = (src,callback)  => {
+          
+            let sc =document.createElement("script")
+            sc.src = src
+            sc.onload = callback("Harry bhai op")
+            document.head.append(sc)
+        }
+
+        loadscript("https://www.w3schools.com/js/js_callback.asp",callback)
+        
+
+
+    </script>
+</body>
+</html>

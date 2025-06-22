@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes meraAnimation{
+            from{
+                background-color: rgb(116, 43, 9);
+            }
+            to{
+                transform: translateX(120px);
+            }
+
+        }
+        @keyframes anim2{
+            0%{
+                transform: rotate(45deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            50%{
+                transform: rotate(270deg);
+            }
+            75%{
+                transform: rotate(310deg);
+            }
+            100%{
+                transform: rotate(390deg);
+            }
+        }
+        .container{
+            background-color: violet;
+            height: 40vh;
+            width: 30vw;
+        }
+        .box{
+            height: 45px;
+            width: 34px;
+            background-color: sandybrown;
+            /* animation-name: meraAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: 30;
+            animation-delay: 1s;   
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+            animation: meraAnimation 2s cubic-bezier(0.165, 0.84, 0.44, 1) 2s 50 reverse ,
+                        anim2 3s ease-in-out 3s 50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
